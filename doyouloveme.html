@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Do you love me ?</h2>
+<button id="btn1" onclick="anser()">Yes</button>
+<button id="btn2" onmouseover="changer()">No</button>
+</body>
+</html>
+<script>
+    function anser(){
+        alert( '<3');
+    }
+    function changer() {
+        let btn2 = document.getElementById('btn2');
+        btn2.style.marginTop = Math.random()*500 + 'px';
+        btn2.style.marginLeft = Math.random()*500 + 'px';
+
+    }
+</script>
